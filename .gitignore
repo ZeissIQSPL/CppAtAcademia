@@ -30,3 +30,51 @@
 *.exe
 *.out
 *.app
+
+# Folders
+Debug/
+Release/
+bin/
+obj/
+v16/
+
+# Other
+*.sdf
+*.opensdf
+*.tlog
+*.log
+*.vcxproj.*
+*.vcxproj
+*.suo
+*.sln# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
