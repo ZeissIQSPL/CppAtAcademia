@@ -2,6 +2,7 @@
 #include "Product.h"
 #include "Samochod.h"
 #include "ShallowCopy.h"
+#include "HeapAndStack.h"
 #include <vector>
 
 
@@ -93,4 +94,9 @@ int main()
 	//m_prod_1.set_rating(2);
 	//std::cout << "m_prod_0: " << m_prod_0.toString() << std::endl;
 	//std::cout << "m_prod_1: " << m_prod_1.toString() << std::endl;
+
+	// Heap and stack
+	//stack();
+	//heap();
+	//deleteArray();
 }
