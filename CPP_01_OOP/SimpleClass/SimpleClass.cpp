@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Product.h"
 #include "Samochod.h"
+#include "ZaprzyjaznionyWarsztat.h"
 #include "ShallowCopy.h"
 #include "HeapAndStack.h"
 #include <vector>
@@ -99,4 +100,10 @@ int main()
 	//stack();
 	//heap();
 	//deleteArray();
+
+	// zaprzyjaznienie
+	//Samochod s_friend("Fiat", "125p", 3);
+	//raportNaprawy(s_friend, 123.50);
+	//ZaprzyjaznionaNaprawa naprawa(333);
+	//naprawa.raport(s_friend);
 }

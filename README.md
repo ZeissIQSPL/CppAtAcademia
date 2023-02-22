@@ -1,2 +1,3 @@
-# CppAtAcademia
-Zajęcia z C++ na kierunkach informatycznych
+# Programowania w C++
+
+Zajęcia z programowania w C++ na kierunkach informatycznych

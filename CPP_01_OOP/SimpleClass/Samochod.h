@@ -4,6 +4,8 @@
 
 using namespace std;
 
+class ZaprzyjaznionaNaprawa;
+
 class Samochod
 {
 private:
@@ -38,5 +40,13 @@ public:
 			", marka: " + this->model_ +
 			", spalanie: " + to_string(this->spalanie_ )+ " }";
 	}
+
+	friend void raportNaprawy(Samochod& samochod, float cena);
+	friend class ZaprzyjaznionaNaprawa;
 };
 
+void raportNaprawy(Samochod& samochod, float cena) {
+	cout << "Koszt naprawy samochodu: "
+		<< samochod.marka_ << " " << samochod.model_
+		<< " wynosi: " << to_string(cena) << endl;
+}
