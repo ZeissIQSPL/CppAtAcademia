@@ -2,7 +2,7 @@
 
 Product::Product(const Product& product)
 {
-	std::cout << "copy constructor" << std::endl;
+	cout << "copy constructor" << endl;
 	set_name(product.name_);
 	set_price(product.price_);
 	this->rating_ = new int;
@@ -19,12 +19,12 @@ Product::Product(const Product& product)
 //	set_availability(product.available_);
 //}
 
-void Product::set_name(const std::string& name)
+void Product::set_name(const string& name)
 {
 	this->name_ = name;
 }
 
-std::string Product::name() const
+string Product::name() const
 {
 	return this->name_;
 }
@@ -51,18 +51,24 @@ double Product::price()
 
 void Product::set_rating(int rating)
 {
-	*this->rating_ = rating;
+	if((this->rating_) != nullptr)
+		*(this->rating_) = rating;
+	else {
+		this->rating_ = new int;
+		*(this->rating_) = rating;
+	}
+
 }
 
 int Product::rating()
 {
-	return *rating_;
+	return (rating_ == nullptr? 0 : *rating_);
 }
 
-std::string Product::toString()
+string Product::toString()
 {
 	return "{ name: " + this->name() +
-		", price: " + std::to_string(this->price()) +
-		", rating: " + std::to_string(this->rating()) +
-		", available: " + std::to_string(this->available()) + " }";
+		", price: " + to_string(this->price()) +
+		", rating: " + to_string(this->rating()) +
+		", available: " + to_string(this->available()) + " }";
 }

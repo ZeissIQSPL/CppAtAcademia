@@ -17,15 +17,15 @@ Product* foo() {
 
 int main()
 {
-	//Product stack_prod;
-	//if (true) {
-	//	Product tmp;
-	//	tmp.set_price(3);
-	//}
-	//stack_prod.set_price(4.2);
-	//std::cout << stack_prod.toString() << std::endl;
+	Product stack_prod("NazwaProd", 5, 10, true);
+	if (true) {
+		Product tmp;
+		tmp.set_price(3);
+	}
+	stack_prod.set_price(4.2);
+	std::cout << stack_prod.toString() << std::endl;
 
-	//std::cout << foo()->toString() << std::endl;
+	std::cout << foo()->toString() << std::endl;
 
 	// Samochod
 	//Samochod car1;
@@ -62,8 +62,8 @@ int main()
 	//objects.push_back(ShallowCopy(3, 3));
 
 	// obiekty stale
-	const ShallowCopy sc_const(13, 13);
-	cout << "sc_const: " << sc_const.toString() << endl;
+	//const ShallowCopy sc_const(13, 13);
+	//cout << "sc_const: " << sc_const.toString() << endl;
 	// sc_const.set_data(10); // ERROR
 
 	//// Copy 

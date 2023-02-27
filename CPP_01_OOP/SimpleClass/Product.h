@@ -2,9 +2,11 @@
 #include <string>
 #include <iostream>
 
+using namespace std;
+
 class Product {
 private:
-	std::string name_;
+	string name_;
 	double price_;
 	int *rating_;
 	bool available_;
@@ -12,9 +14,9 @@ public:
 	Product() = default; 
 //	Product() = delete;
 
-	Product(const std::string& name, double price, int rating, bool availability) :
+	Product(const string& name, double price, int rating, bool availability) :
 		name_(name), price_(price), available_(availability) {
-		std::cout << "param constructor" << std::endl;
+		cout << "param constructor" << std::endl;
 		rating_ = new int;
 		*rating_ = rating;
 	}
@@ -30,13 +32,13 @@ public:
 	Product& operator=(Product&&) = default;
 
 	~Product() {
-		if (rating_ == nullptr)
+		if (rating_ != nullptr)
 			delete rating_;
-		std::cout << "~Product(): destructor" << std::endl;
+		cout << "~Product(): destructor" << std::endl;
 	}
 public:
-	void set_name(const std::string& name);
-	std::string name() const;
+	void set_name(const string& name);
+	string name() const;
 	void set_availability(bool availability);
 	bool available() const;
 	void set_price(double price);
@@ -44,7 +46,7 @@ public:
 	void set_rating(int rating);
 	int rating();
 
-	std::string toString();
+	string toString();
 };
 
 
