@@ -27,6 +27,12 @@ public:
 		this->x_ = x;
 		this->y_ = y;
 	}
+	double x()  {
+		return x_;
+	}
+	double y()  {
+		return y_;
+	}
 	string toString() {
 		return "{ x: " + to_string(x_)
 			+ ", y: " + to_string(y_)
