@@ -17,15 +17,15 @@ Product* foo() {
 
 int main()
 {
-	Product stack_prod("NazwaProd", 5, 10, true);
-	if (true) {
-		Product tmp;
-		tmp.set_price(3);
-	}
-	stack_prod.set_price(4.2);
-	std::cout << stack_prod.toString() << std::endl;
+	//Product stack_prod("NazwaProd", 5, 10, true);
+	//if (true) {
+	//	Product tmp;
+	//	tmp.set_price(3);
+	//}
+	//stack_prod.set_price(4.2);
+	//std::cout << stack_prod.toString() << std::endl;
 
-	std::cout << foo()->toString() << std::endl;
+	//std::cout << foo()->toString() << std::endl;
 
 	// Samochod
 	//Samochod car1;
@@ -46,7 +46,7 @@ int main()
 	//sc2.set_data(77);
 	//cout << "sc1: " << sc1.toString() << endl;
 	//cout << "sc2: " << sc2.toString() << endl;
-	//// deep version
+	// deep version
 	//cout << "DeepCopy: " << endl;
 	//ShallowCopy sc3(sc2);
 	//cout << "sc2: " << sc2.toString() << endl;
@@ -56,10 +56,10 @@ int main()
 	//cout << "sc3: " << sc3.toString() << endl;
 
 	// konstruktor przenoszacy
-	//vector <ShallowCopy> objects;
-	//objects.push_back(ShallowCopy(1, 1));
-	//objects.push_back(ShallowCopy(2, 2));
-	//objects.push_back(ShallowCopy(3, 3));
+	vector <ShallowCopy> objects;
+	objects.push_back(ShallowCopy(1, 1));
+	objects.push_back(ShallowCopy(2, 2));
+	objects.push_back(ShallowCopy(3, 3));
 
 	// obiekty stale
 	//const ShallowCopy sc_const(13, 13);

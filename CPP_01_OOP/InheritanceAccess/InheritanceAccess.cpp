@@ -2,24 +2,34 @@
 #include "PublicDerived.h"
 #include "ProtectedDerived.h"
 #include "PrivateDerived.h"
+#include "DestruktorOrder.h"
+#include "MultipleInheritance.h"
 
 using namespace std;
 
 int main()
 {
-	PublicDerived object1;
-	cout << "Private = " << object1.getPVT() << endl;
-	cout << "Protected = " << object1.getProt() << endl;
-	cout << "Public = " << object1.pub << endl;
+	//PublicDerived object1;
+	//cout << "Private = " << object1.getPVT() << endl;
+	//cout << "Protected = " << object1.getProt() << endl;
+	//cout << "Public = " << object1.pub << endl;
 
-	ProtectedDerived object2;
-	cout << "Private cannot be accessed." << endl;
-	cout << "Protected = " << object2.getProt() << endl;
-	cout << "Public = " << object2.getPub() << endl;
+	//ProtectedDerived object2;
+	//cout << "Private cannot be accessed." << endl;
+	//cout << "Protected = " << object2.getProt() << endl;
+	//cout << "Public = " << object2.getPub() << endl;
 
-	PrivateDerived object3;
-	cout << "Private cannot be accessed." << endl;
-	cout << "Protected = " << object3.getProt() << endl;
-	cout << "Public = " << object3.getPub() << endl;
+	//PrivateDerived object3;
+	//cout << "Private cannot be accessed." << endl;
+	//cout << "Protected = " << object3.getProt() << endl;
+	//cout << "Public = " << object3.getPub() << endl;
+
+	// Konstruktor / Destruktor
+	//Samochod s1("Fiat", "125p");
+	//Kombi k1("Syrena", "104");
+
+	// Multiple inheritance
+	Hybryda h1;
+
 	return 0;
 }
