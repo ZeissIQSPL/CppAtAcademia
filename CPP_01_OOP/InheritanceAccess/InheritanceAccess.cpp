@@ -28,8 +28,10 @@ int main()
 	//cout << "Public = " << object3.getPub() << endl;
 
 	// Konstruktor / Destruktor
-	//Samochod s1("Fiat", "125p");
-	//Kombi k1("Syrena", "104");
+	//{
+	//	Samochod s1("Fiat", "125p");
+	//}
+	//	Kombi k1("Syrena", "104");
 
 	// Multiple inheritance
 	// Hybryda h1;
@@ -78,5 +80,5 @@ int main()
 	ac2->display();
 
 	delete ac2;
-	return 0;
+	//return 0;
 }
