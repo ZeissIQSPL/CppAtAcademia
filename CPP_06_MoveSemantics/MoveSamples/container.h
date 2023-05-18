@@ -113,15 +113,15 @@ int container_test() {
 	//container c{ std::move(a) };
 	//container c(f(a));
 	//container c(f(std::move(a)));
-	//container<string> c{};
+	container<string> c{};
 	//c = std::move(a);
 	// copy/swap
-	//b = a;
-	b = std::move(a);
+	b = a;
+	//b = std::move(a);
 
 	print("a: {}\n", a.str());
 	print("b: {}\n", b.str());
-	//print("c: {}\n", c.str());
+	print("c: {}\n", c.str());
 
 	return 0;
 }

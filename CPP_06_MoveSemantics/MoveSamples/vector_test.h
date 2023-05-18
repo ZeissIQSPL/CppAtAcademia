@@ -37,7 +37,6 @@ int vector_test() {
 
 	//v2 = v1;
 	//v2 = std::move(v1);
-	//::swap(v1, v2);
 	std::swap(v1, v2);
 
 	disp_v(v1, "v1");
