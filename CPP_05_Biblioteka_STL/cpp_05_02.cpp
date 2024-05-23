@@ -2,6 +2,7 @@
 #include <list>
 #include <deque>
 #include <array>
+#include <vector>
 
 void drukuj(const std::list<int>& lista){
     for(auto it = lista.begin(); it != lista.end(); ++it){
@@ -28,41 +29,54 @@ void drukuj(const std::array<int, 5>& tablica){
     std::cout<<std::endl;
 }
 
+template <typename T> 
+void wypisz(std::vector <T> wektor){
+    for(int i=0; i!=wektor.size(); ++i){
+         std::cout<< wektor[i] << " ," ;
+    }
+}
+
 int main(){
     std::cout<<"CPP_05_02" <<std::endl;
 
-    std::list<int> lista {5,4,3,2,1,1,1};
+    // std::vector<int> v {5,4,3,2,1};
+    // std::cout << "Vec.size(): " << v.size() << std::endl;
+    // v.push_back(7);
+    // std::cout << "Vec.size(): " << v.size() << std::endl;
+    // wypisz(v);
 
-    drukuj(lista);
+    // std::list<int> lista {5,4,3,2,1,1,1};
 
-    lista.push_back(6);
+    // drukuj(lista);
 
-    drukuj(lista);
+    // lista.push_back(6);
 
-    lista.push_front(1);
+    // drukuj(lista);
 
-    drukuj(lista);
+    // lista.push_front(1);
 
-    lista.pop_back();
+    // drukuj(lista);
 
-    drukuj(lista);
+    // lista.pop_back();
+
+    // drukuj(lista);
 
 
-    lista.pop_front();
+    // lista.pop_front();
 
-    drukuj(lista);
+    // drukuj(lista);
 
-    lista.remove(1);
+    // lista.remove(1);
 
-    drukuj(lista);
+    // drukuj(lista);
 
-    auto it = lista.begin();
+    // auto it = lista.begin();
 
-    std::advance(it,2);
+    // std::advance(it,2);
 
-    lista.insert(it, 9);
+    // lista.insert(it, 9);
 
-    drukuj(lista);
+    // drukuj(lista);
 
     std::deque<int> kolejka {1,2,3,4,5,6};
 
@@ -77,17 +91,17 @@ int main(){
 
     drukuj(kolejka);
 
-    std::array<int, 5> tablica {5,4,3,2,1};
+    // std::array<int, 5> tablica {5,4,3,2,1};
 
-    std::cout<<tablica.at(1) <<std::endl;
-    std::cout<< tablica[1] <<std::endl;
-    std::cout<< std::get<1>(tablica) <<std::endl;
+    // std::cout<<tablica.at(1) <<std::endl;
+    // std::cout<< tablica[1] <<std::endl;
+    // std::cout<< std::get<1>(tablica) <<std::endl;
 
 
-    drukuj(tablica);
+    // drukuj(tablica);
 
-    tablica.fill(1);
+    // tablica.fill(1);
 
-    drukuj(tablica);
+    // drukuj(tablica);
 
 }
