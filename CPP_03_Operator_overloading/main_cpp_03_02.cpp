@@ -77,8 +77,11 @@ int main(){
     MyClass o1 = MyClass(1,2);
     MyClass o2(3,4);
 
-    // bool check = o1 > o2;
-
+    bool check = o1 > o2;
+    if (check)
+        std::cout << "Pierwszy" << std::endl;
+    else
+        std::cout << "Drugi" << std::endl;
     // std::cout<<o2;
 
     MyClass o3 = MyClass(0,0);
