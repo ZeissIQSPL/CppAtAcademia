@@ -17,9 +17,9 @@ public:
 	}
 
 	// to bedzie glebokie kopiowanie
-	//ShallowCopy(const ShallowCopy &object): ShallowCopy(object.number_, *object.data_){
-	//	cout << "ShallowCopy(copy): utworzony: " << *object.data_ << endl;
-	//}
+	ShallowCopy(const ShallowCopy &object): ShallowCopy(object.number_, *object.data_){
+		cout << "ShallowCopy(copy): utworzony: " << *object.data_ << endl;
+	}
 
 	// konstruktor przenoszacy
 	ShallowCopy(ShallowCopy &&object): 

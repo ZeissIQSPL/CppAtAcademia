@@ -40,6 +40,9 @@ public:
 			", marka: " + this->model_ +
 			", spalanie: " + to_string(this->spalanie_ )+ " }";
 	}
+	void set_marka(string marka) {
+		this->marka_ = marka;
+	}
 
 	friend void raportNaprawy(Samochod& samochod, float cena);
 	friend class ZaprzyjaznionaNaprawa;

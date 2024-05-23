@@ -70,15 +70,15 @@ int main()
 
 	// Abstract
 	// AbstractClass ac; // ERROR
-	ConcreteClass cc;
-	cc.setX(10);
-	cc.setY(20);
-	cc.display();
+	//ConcreteClass cc;
+	//cc.setX(10);
+	//cc.setY(20);
+	//cc.display();
 
-	AbstractClass* ac2 = new ConcreteClass();
-	ac2->setX(13);
-	ac2->display();
+	//AbstractClass* ac2 = new ConcreteClass();
+	//ac2->setX(13);
+	//ac2->display();
 
-	delete ac2;
+	//delete ac2;
 	//return 0;
 }
