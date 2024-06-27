@@ -102,22 +102,22 @@ container<T> f(container<T> o) {
 	return o;
 }
 
-int container_test() {
+inline int container_test() {
 	container<string> a{ "one", "two", "three", "four", "five" };
 	container<string> b{ "five", "six", "seven" };
 
 	print("a: {}\n", a.str());
 	print("b: {}\n", b.str());
 
-	//container c(a);
-	//container c{ std::move(a) };
-	//container c(f(a));
-	//container c(f(std::move(a)));
+	// container c(a);
+	// container c{ std::move(a) };
+	// container c(f(a));
+	// container c(f(std::move(a)));
 	container<string> c{};
-	//c = std::move(a);
+	c = std::move(a);
 	// copy/swap
-	b = a;
-	//b = std::move(a);
+	// b = a;
+	b = std::move(a);
 
 	print("a: {}\n", a.str());
 	print("b: {}\n", b.str());

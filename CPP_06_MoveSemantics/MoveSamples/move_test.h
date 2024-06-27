@@ -26,7 +26,7 @@ int move_test()
 {
 	// Short string length
 	// test with lenght: 7, 15, 50, 100, 200, 500
-	size_t len_ss = 7;
+	size_t len_ss = 500;
 	
 	// Test size
 	const size_t num_ss = 100000;

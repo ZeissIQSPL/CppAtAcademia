@@ -9,7 +9,7 @@
 
 int main()
 {
-	vector_test();
-	//container_test();
-	//move_test();
+	// vector_test();
+	// container_test();
+	move_test();
 }
