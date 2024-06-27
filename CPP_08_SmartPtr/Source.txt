@@ -1,0 +1,8 @@
+Code & pdf link:
+https://github.com/CppCon/CppCon2020/tree/main/Presentations/back_to_basics_smart_pointers
+
+
+========================
+see also @YouTube:
+Back to Basics: C++ Smart Pointers - David Olsen - CppCon 2022:
+https://www.youtube.com/watch?v=sQCSX7vmmKY
