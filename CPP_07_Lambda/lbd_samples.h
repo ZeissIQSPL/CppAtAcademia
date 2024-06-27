@@ -3,7 +3,7 @@
 #include<algorithm>
 #include "format_func.h"
 
-void sample_01() {
+inline void sample_01() {
 	double x(0.0);
 
 	x = [] {return 200; }();
@@ -16,7 +16,7 @@ void sample_01() {
 	print("x = {}\n", x);
 }
 
-void sample_02() {
+inline void sample_02() {
 	auto v = std::vector<int>{ 5, 3, -3, 2, 7, 1, 0, 99, 3 };
 
 	disp_v(v);
@@ -39,20 +39,20 @@ void sample_02() {
 		print("Vector is not partitioned\n");
 }
 
-void sample_03() {
+inline void sample_03() {
 	auto v = std::vector<int>{ 1, 2, 3, 4, 5, };
 
 	disp_v(v);
 
 	int i = 2;
 	transform(v.begin(), v.end(), v.begin(),
-		[&](int x) { ++i;  return x * i; });  // i captured by value
+		[&i](int x) { ++i;  return x * i; });  // i captured by value
 
 	print("i = {}\n", i);
 	disp_v(v);
 }
 
-void sample_04() {
+inline void sample_04() {
 	std::vector<int> v;
 	v.resize(9, 0);
 
@@ -67,7 +67,7 @@ void sample_04() {
 	print("i = {}\n", i);
 	disp_v(v);
 }
-void sample_05() {
+inline void sample_05() {
 
 	int i(1), j(2);
 
@@ -78,7 +78,7 @@ void sample_05() {
 	print("i = {} j = {}\n", i, j);
 
 	//const reference parameters
-	auto cref_lbd = [](auto const& x, auto const& y) {// x++; 
+	auto cref_lbd = [](auto const& x, auto const& y) { //x++; 
 		return (x + y) * 2; };
 	print("cref_lbd = {}\n", cref_lbd(i, j));
 	print("i = {} j = {}\n", i, j);
@@ -90,7 +90,7 @@ void sample_05() {
 	print("i = {} j = {}\n", i, j);
 }
 
-void sample_06() {
+inline void sample_06() {
 	std::vector<int> v1{ 1, 7, 4, 9, 4, 8, 12, 10, 20 };
 
 	// is_div4 predicate

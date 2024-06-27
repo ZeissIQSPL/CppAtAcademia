@@ -11,8 +11,8 @@ int main()
 	//sample_02();
 	//sample_03();
 	//sample_04();
-	sample_05();
-	//sample_06();
+	//sample_05();
+	sample_06();
 
 	//jump_run();
 	
